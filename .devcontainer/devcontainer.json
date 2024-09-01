@@ -1,0 +1,17 @@
+// .devcontainer/devcontainer.json
+{
+  "name": "Flutter",
+  "image": "cirrusci/flutter:stable",
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "dart-code.flutter"
+      ]
+    }
+  },
+
+  "forwardPorts": [3000, 3001],
+
+  "postCreateCommand": "flutter doctor && flutter pub get"
+}
